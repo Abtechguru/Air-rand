@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIR RAND</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="apple-bicycle-icon" sizes="180x180" href="/bicycle-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <a href="#" class="logo"
+        ><i class="fa fa-motor" aria-label="chopnaija"></i> AIR RAND</a
+      >
+      <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#dishes">Our Services</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#chefs">Customer care representatives</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars" aria-label="Menu"></i>
+        <i class="fas fa-search" id="search-icon" aria-label="Search"></i>
+        <a href="#" class="fas fa-heart" aria-label="Favorites"></a>
+        <a
+          href="order.html#cart"
+          class="fas fa-shopping-cart"
+          aria-label="Cart"
+        ></a>
+      </div>
+
+      <!--Search-->
+      <form action="" id="search-form">
+        <input
+          type="search"
+          placeholder="Search here..."
+          name="search"
+          id="search-box"
+        />
+        <label
+          for="search-box"
+          class="fas fa-search"
+          aria-label="Search"
+        ></label>
+        <i class="fas fa-times" id="close" aria-label="Close"></i>
+      </form>
+    </header>
+
+    <!--Home-->
+    <section class="home" id="home">
+      <div class="homeSlider">
+        <div class="wrapper">
+          <div class="slides">
+            <div class="slide">
+              <div class="content">
+                <span>Our Errand Running Services</span>
+                <h3>Let's run it for you</h3>
+                <p>Personal and household tasks such as grocery shopping, bill payments and package pickups</p>
+                <a href="order.html" class="btn order-now" data-item-id="1"
+                  >Run now</a
+                >
+              </div>
+              <div class="image">
+                <img src=" " alt="Errand" />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="content">
+                <span>Our Special Services</span>
+                <h3>Fast and efficient task completion</h3>
+                <p>
+                  Helping client complete jobs quickly and effctively
+                </p>
+                <a href="order.html" class="btn order-now" data-item-id="2"
+                  >Fast-Fast</a
+                >
+              </div>
+              <div class="image">
+                <img src="images/jpg" alt="running" />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="content">
+                <span>Our Special Services</span>
+                <h3>Laudry Services</h3>
+                <p>
+                  Collecting, Cleaning and delivering Clothes.
+                </p>
+                <a href="order.html" class="btn order-now" data-item-id="3"
+                  >Do my Laundry</a
+                >
+              </div>
+              <div class="image">
+                <img src="images/food/" alt="Laudry" />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="content">
+                <span>Our Special Services</span>
+                <h3>Food delivery</h3>
+                <p>
+                  We partner with eateries to ensure timely meal delivery
+                </p>
+                <a href="order.html" class="btn order-now" data-item-id="4"
+                  >See Available meal</a
+                >
+              </div>
+              <div class="image">
+                <img src="images/food/waina.jpg" alt="Waina" />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="content">
+                <span>Our Special Services</span>
+                <h3></h3>
+                <p>
+                  Assisting with budgeting, bill payments and financial planning
+                </p>
+                <a href="order.html" class="btn order-now" data-item-id="5"
+                  >My finance </a
+                >
+              </div>
+              <div class="image">
+                <img src="images/food/afang.jpg" alt="my finance" />
+              </div>
+            </div>
+          </div>
+          <div class="dots">
+            <span
+              class="dot"
+              onclick="currentSlide(0)"
+              aria-label="Slide 1"
+            ></span>
+            <span
+              class="dot"
+              onclick="currentSlide(1)"
+              aria-label="Slide 2"
+            ></span>
+            <span
+              class="dot"
+              onclick="currentSlide(2)"
+              aria-label="Slide 3"
+            ></span>
+            <span
+              class="dot"
+              onclick="currentSlide(3)"
+              aria-label="Slide 4"
+            ></span>
+            <span
+              class="dot"
+              onclick="currentSlide(4)"
+              aria-label="Slide 5"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dishes -->
+    <section class="dishes" id="dishes">
+      <h3 class="sub-heading">Our Services</h3>
+      <h1 class="heading">Daily Offers</h1>
+      <div class="box-container">
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Gizdodo to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View Gizdodo"></a>
+          <img src="images/food/gizdodo.jpg" alt="Gizdodo" />
+          <h3>Real Estate Services</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+          </div>
+          <span>₦5000.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="6"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Akpoya-ee to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View Akpoya-ee"></a>
+          <img src="images/food/akpoya-ee.jpeg" alt="Akpoya-ee Soup" />
+          <h3>Food Delivery</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+          </div>
+          <span>₦1800.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="7"
+            aria-label="Add to Cart"
+          >
+            Add to Cart
+          </a>
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Ofe Onugbo to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View Ofe Onugbo"></a>
+          <img src="images/food/ofe-onugbo.png" alt="Ofe Onugbo Soup" />
+          <h3>Laundry</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+          </div>
+          <span>₦2000.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="8"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Tuwo Shinkafa to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View Tuwo Shinkafa"></a>
+          <img src="images/food/tuwo.jpg" alt="Food" />
+          <h3>Express Laundry</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+          </div>
+          <span>₦2500.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="9"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Okro Soup to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View Okro Soup"></a>
+          <img src="images/food/okro.jpg" alt="Laundry" />
+          <h3>Okro</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+          </div>
+          <span>₦3000.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="10"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Grilled Giwa Ruwa to favorites"
+          ></a>
+          <a
+            href="#"
+            class="fas fa-eye"
+            aria-label="View Grilled Giwa Ruwa"
+          ></a>
+          <img src="images/food/giwa-ruwa.jpg" alt="Grilled Giwa Ruwa" />
+          <h3>Property management</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+          </div>
+          <span>₦9900.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="11"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Efo Riro to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View Efo Riro"></a>
+          <img src="images/food/efo-riro.jpg" alt="Property" />
+          <h3>Efo Riro</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+          </div>
+          <span>₦5000.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="12"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Egusi to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View Egusi"></a>
+          <img src="images/food/egusi.jpg" alt="Egusi Soup" />
+          <h3>Personal Request</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+          </div>
+          <span>₦4500.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="13"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <h3 class="sub-heading">About Us</h3>
+      <h1 class="heading">Why Choose Us?</h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/about.jpg" alt="About Us" />
+        </div>
+        <div class="content">
+          <h3>Efficiency, Reliability, Customer Satisfaction, integrity and Innovation are our Core Values</h3>
+          <p>
+            We are dedicated to helping individuals and businesses efficiently manage their daily tasks and responsibilities. We Specialize in running errand ranging from simple chores to complex logistical tasks.
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast" aria-label="Free Delivery"></i>
+              <span>Flexible, Avoidable and Fast Delivery</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-naira-sign" aria-label="Easy Payments"></i>
+              <span>Easy Payments</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-headset" aria-label="24/7 Service"></i>
+              <span>24/7 Service</span>
+            </div>
+          </div>
+          <a href="#" class="btn" aria-label="Learn More">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">Our Menu</h3>
+      <h1 class="heading">Today's Offers</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/food/fura.jpg" alt="Fura da Nono" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Fura da Nono to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Fura da Nono</h3>
+            <p>A traditional yogurt drink mixed with millet.</p>
+            <a
+              href="order.html"
+              class="btn add-to-cart"
+              data-item-id="14"
+              aria-label="Add Fura da Nono to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/ewa.jpg" alt="Ewa Agoyin & Plantain" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Ewa Agoyin & Plantain to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>Ewa Agoyin & Plantain</h3>
+            <p>
+              Mashed beans served with a peppery, caramelized sauce and
+              plantains.
+            </p>
+            <a
+              href="order.html"
+              class="btn add-to-cart"
+              data-item-id="15"
+              aria-label="Add Ewa Agoyin & Plantain to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/nkwobi.JPG" alt="Nkwobi" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Nkwobi to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Nkwobi</h3>
+            <p>Spiced cow foot delicacy, marinated in a rich, spicy sauce.</p>
+            <a href="#" class="btn" aria-label="Add Nkwobi to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/miyan.jpg" alt="Miyan Kuka" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Miyan Kuka to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>Miyan Kuka</h3>
+            <p>Baobab leaf soup, typically served with tuwo.</p>
+            <a href="#" class="btn" aria-label="Add Miyan Kuka to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/akara.jpeg" alt="Akara" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Akara to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Akara</h3>
+            <p>Deep-fried bean cakes, crispy on the outside and soft inside.</p>
+            <a href="#" class="btn" aria-label="Add Akara to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/fisherman.jpg" alt="Fisherman Soup" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Fisherman Soup to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Fisherman Soup</h3>
+            <p>Seafood-rich soup, often containing crabs, prawns, and fish.</p>
+            <a href="#" class="btn" aria-label="Add Fisherman Soup to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/miyant.jpg" alt="Miyan Taushe" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Miyan Taushe to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Miyan Taushe</h3>
+            <p>Pumpkin soup made with groundnut, vegetables, and spices.</p>
+            <a href="#" class="btn" aria-label="Add Miyan Taushe to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/moi.jpeg" alt="Moi Moi" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Moi Moi to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>Moi Moi</h3>
+            <p>
+              Steamed bean cake made with ground beans, peppers, and spices.
+            </p>
+            <a href="#" class="btn" aria-label="Add Moi Moi to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/Ekpang-Nkukwo.jpg" alt="Ekpang Nkukwo" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Ekpang Nkukwo to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Ekpang Nkukwo</h3>
+            <p>A pottage made with grated cocoyam and wrapped in leaves.</p>
+            <a href="#" class="btn" aria-label="Add Ekpang Nkukwo to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chefs -->
+    <section id="chefs" class="chef-carousel">
+      <h3 class="chef-sub-heading">Customer representatives</h3>
+      <h1 class="chef-heading">Meet the Runners</h1>
+
+      <div class="chef-slider">
+        <div class="chef-wrapper">
+          <div class="chef-slide">
+            <div class="chef-user">
+              <img src="images/people/.JPG" alt="Ayodeji Adesegun" />
+              <div class="chef-user-info">
+                <h3>Lateef Abiodun</h3>
+                <div class="chef-stars">
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                </div>
+                <p>
+                  Food and finance
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chef-slide">
+            <div class="chef-user">
+              <img src="images/people/akolo.JPG" alt="Akolo Bolus" />
+              <div class="chef-user-info">
+                <h3>Olakunle Kamal</h3>
+                <div class="chef-stars">
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                </div>
+                <p>
+                  Laudry and food
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>AIR RAND</h3>
+          <p>
+            Your everyday fidelity.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dishes">Our Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#chefs">Customer care representatives</a></li>
+          </ul>
+          </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@airrand.com</p>
+          <p>Phone: +234 (0) 8101710773</p>
+          <p>Address: Ikeja, Lagos, Nigeria</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 AIR RAND. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+  </body>
+</html>
